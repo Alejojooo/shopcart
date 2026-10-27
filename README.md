@@ -18,3 +18,25 @@ El negocio tiene preocupaciones concretas que la plataforma debe resolver:
 - Tener trazabilidad completa de quién modificó precios, existencias y pedidos.
 - Contar con trazabilidad clara de entradas, salidas y ajustes de inventario.
 - Los montos se manejan en quetzales y los precios publicados incluyen IVA del 12 %.
+
+## Roadmap
+
+El trabajo será realizado utilizando la técnica de **balas trazadoras**: se agrega funcionalidad de extremo a extremo, tocando la mayoría de capas del sistema para comprobar que la solución funciona en conjunto. Las decisiones de arquitectura y diseño se difieren hasta que no puedan evadirse. El objetivo de esta metodología es generar feedback rápido de lo que funciona, lo que debe mejorarse y lo que se debe descartar de la solución final.
+
+El flujo, a grandes rasgos es:
+
+1. Completar la funcionalidad requerida en los requerimientos funcionales, de forma correcta y con aserciones básicas, como método de exploración.
+2. Reforzar la validación de casos bordes y cumplimiento de requisitos no funcionales.
+3. Durante todo el proceso, tener en cuenta los requerimientos técnicos obligatorios para la toma de decisiones.
+
+Los módulos están ordenados según la importancia dentro del negocio (qué se necesita primero y qué después), la complejidad (qué tantas decisiones necesitamos) y el riesgo inherente (en caso de que falle, qué tanto debemos reescribir).
+
+- [ ] Catálogo de productos
+- [ ] Autenticación y control de acceso
+- [ ] Bitácora
+- [ ] Inventario
+- [ ] Carrito de compras
+- [ ] Checkout y pago
+- [ ] Gestión de pedidos y devoluciones
+- [ ] Cupones y promociones
+- [ ] Dashboard y reportes
